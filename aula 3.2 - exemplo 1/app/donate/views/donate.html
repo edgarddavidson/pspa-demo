@@ -1,0 +1,68 @@
+<div class="page">
+
+    <section class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Preenche as informações no animal para doação</strong>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <form role="form">
+                        <div class="form-group">
+                            <label>Nome do animal</label>
+                            <input type="text" class="form-control" ng:model="animal.name" placeholder="Ex: Batatinha">
+                        </div>
+                        <div class="form-group">
+                            <label>Animal</label>
+                            <input type="text" class="form-control" ng:model="animal.type" placeholder="Ex: Cachorro, gato, tartaruga, etc">
+                        </div>
+                        <div class="form-group">
+                            <label>Raça</label>
+                            <input type="text" class="form-control" ng:model="animal.spitz" placeholder="Ex: Pastor Alemão">
+                        </div>
+                        <div class="form-group">
+                            <label>Idade</label>
+                            <input type="text" class="form-control" ng:model="animal.age" placeholder="Ex: 0 a 6 meses">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Descrição</label>
+                            <input type="text" class="form-control" ng:model="animal.description" placeholder="Ex: Uma breve descrição sobre o animal">
+                        </div>
+                         <div class="form-group">
+                             <label>Escolha uma foto do animal</label>
+                            <input type="text" placeholder="Escolher foto. Ex: ../images/dog8.jpg"  class="form-control" ng:model="animal.img" >
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-w-md" ng-click="save(animal)">Salvar</button>
+                    </form>
+
+
+                </div>
+                <div class="col-md-6">
+                    <form role="form">
+
+                        <div class="form-group">
+                            <label>Contato para doação</label>
+                            <input type="text" class="form-control" ng:model="animal.owner.name" placeholder="nome da pessoa de contato">
+                        </div>
+                        <div class="form-group">
+                            <label>Endereço</label>
+                            <input type="text" class="form-control" ng:model="animal.owner.city" placeholder="Ex: rua x, número 1, bairro xyz">
+                        </div>
+                        <div class="form-group">
+                            <label>Telefone</label>
+                            <input type="text" class="form-control" ng:model="animal.owner.tel" placeholder="Ex: (31) 3333-3333">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" class="form-control" ng:model="animal.owner.email" placeholder="">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:ng="http://angularjs.org" >
+    <head>
+        <title>Adote-me</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link  rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css" >
+        <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap-theme.css" >
+        <link rel="stylesheet" href="main.css" >
+
+
+    </head>
+    <body >
+        <div ng-include="'app/containers/views/header.html'"></div>
+       
+        <div class="container">
+            <ng:view></ng:view>
+            <hr>
+            <div ng-include="'app/containers/views/footer.html'"></div>
+        </div>
+        
+
+        <!-- Le javascript
+      ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script data-main="main.js" src="bower_components/requirejs/require.js"></script>
+         
+    </body>
+</html>
